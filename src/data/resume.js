@@ -15,25 +15,25 @@ export const profile = {
   github: "https://github.com/Rj-2171",
   linkedin: "https://linkedin.com/in/-richa-jha",
   resumeUrl: "/resume.pdf",
-  availability: "Open to SWE, Data, ML/AI & TPM roles",
+  availability: "Open to SWE, Data, ML/AI & Technical PM roles",
   summary:
-    "Computer Science master's student at NC State with three years of hands-on experience in software engineering and data engineering at Deloitte and HighRadius. I've worked across Python, Java, SQL, ML and React, and explored LLM and RAG, and computer vision through academic and personal projects.",
+    "Computer Science master's student at NC State with three years of software and data engineering experience at Deloitte and HighRadius. I've worked across Python, Java, SQL, and React, and explored machine learning, LLM and RAG-powered applications, and computer vision through academic and personal projects, backed by certifications in AI development.",
   tagline:
     "I build data-driven products end to end, from ETL pipelines and backend APIs to ML models and the interfaces around them.",
-  // Shown in About: she's open to SWE/data/ML/AI roles at any level (not just new grad,
-  // given 3 years at Deloitte) and is also exploring technical product management,
-  // building on her experience leading/collaborating with cross-functional teams
-  // at Deloitte. The AI PM and IBM AI Developer certifications were pursued to
-  // understand how AI products actually get built and shipped, not as random extras.
+  // Shown in About: she's targeting two tracks, individual-contributor technical
+  // roles (SWE/Data/ML/AI) at any level given her 3 years at Deloitte, and
+  // technical/client-facing leadership roles (TPM), building on her experience
+  // leading client discussions at Deloitte plus the Microsoft AI PM and Google
+  // Generative AI Leader certifications.
   pmNote:
-    "Also exploring Technical Product Management, building on the cross-functional collaboration and mentoring experience I gained at Deloitte. I picked up the Microsoft AI Product Manager and IBM AI Developer certifications to better understand how AI products actually get designed, built, and shipped.",
+    "I'm also exploring Technical Product Management and client-facing technical roles, building on experience leading client discussions and cross-functional collaboration at Deloitte. I picked up the Microsoft AI Product Manager and Google Generative AI Leader certifications to better understand how AI products actually get designed, built, and shipped.",
 };
 
 // Short, high-impact numbers shown in the hero stats strip.
 export const stats = [
   { label: "Years of Experience", value: "3+" },
-  { label: "Projects Shipped", value: "6" },
-  { label: "Certifications", value: "10" },
+  { label: "Projects Shipped", value: "7" },
+  { label: "Certifications", value: "4" },
   { label: "Companies", value: "3" },
 ];
 
@@ -64,19 +64,18 @@ export const experience = [
     company: "Deloitte",
     period: "Jun 2022 - Jul 2025",
     points: [
-      "Designed and automated ETL pipelines using Python, PySpark, SQL, Databricks, Informatica, AWS, and Power BI, cutting manual effort by more than 400 hours a year and improving data quality and timeliness.",
+      "Designed and automated ETL pipelines using Python, PySpark, SQL, Databricks, Informatica, and AWS, cutting manual effort by more than 400 hours a year and improving data quality and timeliness.",
       "Led client discussions and cross-team conversations with in-house and client stakeholders to prioritize the backlog, run Agile sprints, and communicate data risks and dependencies.",
-      "Completed Deloitte's AI Academy certification and started applying AI/ML techniques to some of the team's data workflows.",
       "Mentored new team members on coding practices, documentation, and quality standards.",
     ],
-    tags: ["Python", "PySpark", "SQL", "Databricks", "Informatica", "AWS", "Power BI", "AI/ML"],
+    tags: ["Python", "PySpark", "SQL", "Databricks", "Informatica", "AWS"],
   },
   {
     role: "Software Engineer Intern",
     company: "HighRadius",
     period: "Jan 2021 - May 2022",
     points: [
-      "Built an AI-enabled B2B accounts receivable application end to end, automating data analysis and cutting collection cycle time by 45%.",
+      "Built an AI-enabled B2B accounts receivable application end to end, automating invoice data and cutting collection cycle time by 45%.",
       "Implemented backend services in Java and SQL, and built frontend features in React.js for invoice processing workflows.",
     ],
     tags: ["Java", "SQL", "React.js"],
@@ -86,7 +85,7 @@ export const experience = [
     company: "PrepEase",
     period: "Apr 2020 - May 2020",
     points: [
-      "Built backend APIs using Node.js and MongoDB for an online examination platform supporting 50+ concurrent users.",
+      "Built backend APIs using Node.js and MongoDB for an online examination platform supporting 150+ concurrent users.",
       "Added features such as question uploads, test cards, countdown timers, and live video class integration.",
     ],
     tags: ["Node.js", "MongoDB"],
@@ -94,6 +93,15 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    title: "PulseMorph",
+    subtitle: "AI Wearable Health Dashboard, WolfHacks Hackathon",
+    year: "2026",
+    description:
+      "Contributed to the data pipeline feeding glucose, heart rate, and skin conductance data through Databricks into Tiger Data (PostgreSQL and TimescaleDB), and supported the Gemini API integration behind the app's real-time glucose predictions and AI agent, on a multi-person hackathon team.",
+    tags: ["Databricks", "PostgreSQL", "TimescaleDB", "Gemini API"],
+    github: "https://github.com/Rj-2171/PulseMorph",
+  },
   {
     title: "Satellite Image Classification",
     subtitle: "Vegetation vs. Built-Up Land",
@@ -117,7 +125,7 @@ export const projects = [
     subtitle: "NC State WiCS x Fidelity Investments",
     year: "2026",
     description:
-      "Selected from around 100 applicants for this Fidelity Investments-sponsored micro-learning platform team. Built Java backend REST APIs (Spring Boot, PostgreSQL) with JWT authentication, using a modular architecture and a team GitHub workflow.",
+      "Selected from around 500 applicants for this Fidelity Investments-sponsored micro-learning platform team. Built Java backend REST APIs (Spring Boot, PostgreSQL) with JWT authentication, using a modular architecture and a team GitHub workflow.",
     tags: ["Java", "Spring Boot", "PostgreSQL", "JWT"],
     github: "https://github.com/Rj-2171/Micro-Learning-App",
   },
@@ -135,7 +143,7 @@ export const projects = [
     subtitle: null,
     year: "2021",
     description:
-      "Built an end-to-end ML model and a React.js frontend to predict invoice payment dates from historical invoice and payment data, achieving about 80% accuracy on a Java-SQL backend.",
+      "Built an end-to-end ML model and a React.js frontend to predict invoice payment dates from historical invoice and payment data, achieving about 87% accuracy on a Java-SQL backend.",
     tags: ["Java", "SQL", "React.js", "Machine Learning"],
     github: null,
   },
@@ -201,17 +209,13 @@ export const skills = [
 
 // Kept intentionally uniform (name + year only, no description) so all
 // certifications read consistently instead of only some having detail text.
+// Trimmed to match her current resume's curated list (dropped a handful of
+// earlier intro-level certs that no longer appear on her resume).
 export const certifications = [
   { name: "IBM AI Developer Professional Certificate", year: "2026" },
+  { name: "Google Generative AI Leader Professional Certificate", year: "2026" },
   { name: "Microsoft AI Product Manager Professional Certificate", year: "2026" },
   { name: "Deloitte AI Academy", year: "2022" },
-  { name: "Coursera: Artificial Intelligence", year: "2020" },
-  { name: "Cloud Computing Basics", year: "2020" },
-  { name: "RCPL Python", year: "2020" },
-  { name: "HackerRank C++", year: "2020" },
-  { name: "Google Hash Code", year: "2020" },
-  { name: "Full Stack Web Development", year: "2019" },
-  { name: "Introduction to Python", year: "2020" },
 ];
 
 export const achievements = [

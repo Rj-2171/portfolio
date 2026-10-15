@@ -31,7 +31,7 @@ export default function Contact() {
         <SectionHeading
           eyebrow="Get In Touch"
           title="Let's Work Together"
-          description="I'm open to SWE, Data, ML/AI & TPM roles, plus interesting collaborations. Feel free to reach out."
+          description="I'm open to SWE, Data, ML/AI & Technical PM roles, plus interesting collaborations. Feel free to reach out."
         />
 
         <Reveal delay={0.1}>
@@ -42,7 +42,7 @@ export default function Contact() {
                 href={href}
                 target={label === "Email" ? undefined : "_blank"}
                 rel={label === "Email" ? undefined : "noreferrer"}
-                className="card group flex flex-col items-center gap-3 p-6 text-center transition-colors hover:border-accent/50"
+                className="card group flex flex-col items-center gap-3 p-6 text-center transition-colors hover:border-accent/40 hover:shadow-md"
               >
                 <span className="rounded-xl bg-accent/10 p-3 text-accent">
                   <Icon size={20} />

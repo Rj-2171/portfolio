@@ -24,11 +24,11 @@ export default function Skills() {
             const Icon = ICONS[group.category] ?? FiCode;
             return (
               <Reveal key={group.category} delay={i * 0.08} className="mb-5 break-inside-avoid">
-                <div className="card group relative overflow-hidden p-6 transition-colors hover:border-accent/50">
+                <div className="card group relative overflow-hidden p-6 transition-colors hover:border-accent/40">
                   <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-accent/10 blur-2xl transition-opacity group-hover:opacity-80" />
 
                   <div className="relative flex items-center gap-3">
-                    <span className="rounded-xl bg-gradient-to-br from-accent/20 to-accent-2/20 p-2.5 text-accent">
+                    <span className="rounded-xl bg-gradient-to-br from-accent/15 to-accent-2/15 p-2.5 text-accent">
                       <Icon size={17} />
                     </span>
                     <h3 className="font-mono text-sm font-semibold uppercase tracking-wide text-text">

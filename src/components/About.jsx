@@ -6,7 +6,7 @@ import SectionHeading from "./SectionHeading";
 const FACTS = [
   { icon: FiMapPin, label: "Based in", value: profile.location },
   { icon: FiBriefcase, label: "Experience", value: "3+ years, Deloitte & HighRadius" },
-  { icon: FiCode, label: "Focus", value: "Data Engineering, ML & Full-Stack" },
+  { icon: FiCode, label: "Targeting", value: "SWE/Data/ML/AI roles & technical PM roles" },
 ];
 
 export default function About() {
@@ -22,7 +22,7 @@ export default function About() {
             </p>
 
             {profile.pmNote && (
-              <div className="mt-5 flex items-start gap-3 rounded-xl border border-accent/25 bg-accent/5 p-4">
+              <div className="mt-5 flex items-start gap-3 rounded-xl border border-accent/20 bg-accent/5 p-4">
                 <span className="mt-0.5 shrink-0 rounded-lg bg-accent/10 p-2 text-accent">
                   <FiCompass size={16} />
                 </span>

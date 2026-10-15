@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 
-/**
- * Tracks which section is currently in view so the navbar can
- * highlight the matching link as the user scrolls.
- */
-export default function useActiveSection(sectionIds) {
-  const [activeId, setActiveId] = useState(sectionIds[0]);
+export default function useActiveSection(ids) {
+  const [active, setActive] = useState(ids[0]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -13,21 +9,20 @@ export default function useActiveSection(sectionIds) {
         const visible = entries
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-
-        if (visible.length > 0) {
-          setActiveId(visible[0].target.id);
+        if (visible[0]) {
+          setActive(visible[0].target.id);
         }
       },
-      { rootMargin: "-30% 0px -55% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] }
+      { rootMargin: "-35% 0px -55% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] }
     );
 
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
+    const elements = ids
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
-  }, [sectionIds]);
+  }, [ids]);
 
-  return activeId;
+  return active;
 }

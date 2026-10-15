@@ -8,7 +8,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="min-h-screen bg-bg text-text">
       <Navbar />
@@ -25,5 +25,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

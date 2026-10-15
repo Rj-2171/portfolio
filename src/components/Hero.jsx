@@ -57,13 +57,13 @@ export default function Hero() {
     >
       {/* Background glow + grid texture */}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="blob absolute -left-32 top-24 h-72 w-72 rounded-full bg-accent/20" />
+        <div className="blob absolute -left-32 top-24 h-72 w-72 rounded-full bg-accent/15" />
         <div
-          className="blob absolute -right-24 top-1/3 h-96 w-96 rounded-full bg-accent-2/20"
+          className="blob absolute -right-24 top-1/3 h-96 w-96 rounded-full bg-accent-2/15"
           style={{ animationDelay: "-6s" }}
         />
         <div
-          className="absolute inset-0 opacity-[0.06]"
+          className="absolute inset-0 opacity-[0.05]"
           style={{
             backgroundImage:
               "linear-gradient(var(--color-border) 1px, transparent 1px), linear-gradient(90deg, var(--color-border) 1px, transparent 1px)",
@@ -79,7 +79,7 @@ export default function Hero() {
           <div>
             <motion.div
               {...fadeUp(0)}
-              className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3.5 py-1.5"
+              className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-1.5 shadow-sm"
             >
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
@@ -117,13 +117,13 @@ export default function Hero() {
             <motion.div {...fadeUp(0.4)} className="mt-9 flex flex-wrap items-center gap-4">
               <a
                 href="#projects"
-                className="rounded-full bg-gradient-to-r from-accent to-accent-2 px-6 py-3 font-mono text-sm font-semibold text-bg shadow-[0_0_0_0_rgba(94,234,212,0)] transition-all hover:scale-105 hover:shadow-[0_0_30px_-6px_var(--color-accent)]"
+                className="rounded-full bg-gradient-to-r from-accent to-accent-2 px-6 py-3 font-mono text-sm font-semibold text-white shadow-md shadow-accent/20 transition-all hover:scale-105 hover:shadow-lg hover:shadow-accent/30"
               >
                 View Projects
               </a>
               <a
                 href="#contact"
-                className="rounded-full border border-border px-6 py-3 font-mono text-sm text-text transition-colors hover:border-accent hover:text-accent"
+                className="rounded-full border border-border bg-surface px-6 py-3 font-mono text-sm text-text transition-colors hover:border-accent hover:text-accent"
               >
                 Get In Touch
               </a>
@@ -164,16 +164,16 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="relative mx-auto w-full max-w-[320px] lg:max-w-none"
           >
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-sm">
-              <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-accent to-accent-2 opacity-40 blur-2xl" />
-              <div className="relative h-full w-full overflow-hidden rounded-[1.75rem] border border-border bg-surface p-2">
+            <div className="relative mx-auto aspect-[2/3] w-full max-w-sm">
+              <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-accent to-accent-2 opacity-20 blur-2xl" />
+              <div className="relative h-full w-full overflow-hidden rounded-[1.75rem] border border-border bg-surface p-2 shadow-xl shadow-slate-200/60">
                 <img
                   src={profile.photo}
                   alt={profile.name}
                   className="h-full w-full rounded-[1.4rem] object-cover"
                 />
               </div>
-              <div className="absolute -inset-3 -z-10 rounded-[2rem] border border-accent/20" />
+              <div className="absolute -inset-3 -z-10 rounded-[2rem] border border-accent/15" />
             </div>
           </motion.div>
         </div>
